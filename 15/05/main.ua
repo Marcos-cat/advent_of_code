@@ -1,11 +1,11 @@
 File ← &fras"./input.txt"
 
 ---Solution₁
-  F ← ∘
+  F ← ⧻⊚↧↧⊜⊃(≥3/+∊⊙"aeiou"|/↥≡/=◫2|=0⧻⊚≡⌕↯∞_2"abcdpqxy"¤)⊸≠@\n
   &p F File
 ---
 
 ---Solution₂
-  F ← ∘
+  F ← ⧻⊚↧⊜⊃(¬≍⊸◴▽-⊸=2°▽◫2|/↥=∩⊢⊸⇌⍉◫3)⊸≠@\n
   &p F File
 ---
