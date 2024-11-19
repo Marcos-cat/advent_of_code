@@ -19,7 +19,7 @@ File ← &fras"input.txt"
   
   SolTwo ← /+⊜FirstLast ≠@\n.File
   
-  Nums ← ⊜□⊸≠@,"one,two,three,four,five,six,seven,eight,nine"
+  Nums ← ⊜□⊸≠@ $ one two three four five six seven eight nine
   F ← /++×10⊜(∩⊢⟜⇌▽⊸±/↥⊂×+1°⊏≡◇⌕Nums¤⟜∵⍣⋕0)⊸≠@\n
   F ← /++×10⊜(∩⊢⟜⇌▽./↥⊂×+1°⊏≡◇⌕Nums¤⟜∵⍣⋕0)⊸≠@\n
 
