@@ -1,11 +1,13 @@
 File ← &fras"./input.txt"
 
 ---Solution₁
-  F ← ∘
+  F ← /+⊜⋕⊸∵⍣(⋅1⋅⋕)=@-
+  F ← /+⊜⋕∊⊸:⊂@-+@0⇡10
   &p F File
 ---
 
 ---Solution₂
-  F ← ∘
+  F₀ ← |1 ⍥(⍚F₀▽≠2⊸≡type) ¬≍[]⊸△ ⍣(⍥⋅{}⊸∊□"red"◌°map)∘ ⍥°□∞
+  F ← /+⍥/◇⊂∞F₀°json
   &p F File
 ---
