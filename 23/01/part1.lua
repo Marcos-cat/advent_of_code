@@ -7,4 +7,3 @@ for line in io.lines './input.txt' do
     sum = sum + first * 10 + last
 end
 print(sum)
-
