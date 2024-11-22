@@ -1,8 +1,21 @@
-f ← &fras"./input.txt"
-u ← °[⊙⊙∘]
-t ← ⍜u(⊙(:⊙+)⟜-,)
-s ← ⊃↘(⊜⋕≠@ .↘+1⊗@:.↙)⊗@\n. f
-p ← ⊜(□ ⊜(t⊜⋕≠@ .)≠@\n. ↘+1⊗@:.)¬↧1⦷⊟.@\n. s
+File ← &fras"./input.txt"
+~ "git: Marcos-cat/makros" ~ Struct!
 
-SolOne ← /↧ ≡∧◇(+⍣(⊡⊢⊚)0 ≡(↧⊓≤>⟜:⊙u),) ¤ p
-SolOne
+---Map
+  Struct![Start End Diff]
+---
+---Alm
+  Struct![Dest Src Len]
+  ToMap ← Map~New ⊙⊓+-⟜⊃⊙Len⊙Dest⊸Src
+---
+
+F ← (
+  ⊜□¬⊸⦷"\n\n"
+  ⍚(⊜(⊜⋕⊸≠@ )⊸≠@\n◌°$"_:_")
+  :°(⊂□¤)
+  ⍚Alm~ToMap
+
+  /↧∧(+/+×⊸◇⊃(↧⊓≤>⊃⊙Map~Start⊙Map~End¤:|Map~Diff))
+)
+
+&p F File
