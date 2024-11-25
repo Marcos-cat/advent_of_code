@@ -12,13 +12,13 @@ local totalsteps = 1
 for _, node in ipairs(nodes) do
     local steps = 0
     while node:sub(-1) ~= 'Z' do
-        local diri = math.fmod(steps, #instrs) + 1
+        local diri = steps % #instrs + 1
         node = map[node][instrs:sub(diri, diri)]
         steps = steps + 1
     end
     local gcd, b = totalsteps, steps
     repeat
-        gcd, b = b, math.fmod(gcd, b)
+        gcd, b = b, gcd % b
     until b == 0
     totalsteps = (steps * totalsteps) / gcd
 end

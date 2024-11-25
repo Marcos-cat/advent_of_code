@@ -9,7 +9,7 @@ for line in io.lines './input.txt' do
 end
 local steps, curr = 0, 'AAA'
 while curr ~= 'ZZZ' do
-    local i = math.fmod(steps, #instrs) + 1
+    local i = steps % #instrs + 1
     curr = nodes[curr][instrs:sub(i, i)]
     steps = steps + 1
 end
