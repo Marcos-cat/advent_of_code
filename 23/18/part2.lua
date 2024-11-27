@@ -17,7 +17,6 @@ for line in io.lines './input.txt' do
 end
 local area = 0
 for i = 1, #points - 1 do -- Shoelace formula!!!
-    area = area
-        + (points[i].y + points[i + 1].y) * (points[i].x - points[i + 1].x)
+    area = area + points[i].y * (points[i].x - points[i + 1].x)
 end
-print(math.abs(area) / 2 + perimeter / 2 + 1)
+print(math.abs(area) + perimeter / 2 + 1)
