@@ -11,4 +11,4 @@ for line in io.lines './input.txt' do
         end
     end
 end
-print(prod)
+print(prod) -- 1083852

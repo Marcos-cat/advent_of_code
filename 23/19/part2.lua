@@ -64,4 +64,4 @@ local part = {}
 for xmas in ('xmas'):gmatch '.' do
     part[xmas] = { min = 1, max = 4000 }
 end
-print(string.format('%d', flow(part, workflows['in'])))
+print(string.format('%d', flow(part, workflows['in']))) -- 130303473508222

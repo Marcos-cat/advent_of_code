@@ -22,4 +22,4 @@ for _, num in ipairs(nums) do
         end
     end
 end
-print(sum)
+print(sum) -- 498559

@@ -9,4 +9,4 @@ for line in io.lines './input.txt' do
     end
     game = game + 1
 end
-print(sum)
+print(sum) -- 2727

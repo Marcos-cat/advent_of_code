@@ -53,4 +53,4 @@ for _, row in ipairs(tiles) do
         if tile.energized then energized = energized + 1 end
     end
 end
-print(energized)
+print(energized) -- 7798

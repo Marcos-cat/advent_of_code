@@ -19,4 +19,4 @@ local area = 0
 for i = 1, #points - 1 do -- Shoelace formula!!!
     area = area + points[i].y * (points[i].x - points[i + 1].x)
 end
-print(math.abs(area) + perimeter / 2 + 1)
+print(math.abs(area) + perimeter / 2 + 1) -- 59574883048274

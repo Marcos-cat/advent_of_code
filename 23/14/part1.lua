@@ -24,4 +24,4 @@ for _, col in ipairs(cols) do
         if rock == 'O' then load = load + row - i + 1 end
     end
 end
-print(load)
+print(load) -- 113456

@@ -65,4 +65,4 @@ for _ = 1, 1000 do
         pulses = next
     end
 end
-print(highs * lows)
+print(highs * lows) -- 703315117

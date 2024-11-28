@@ -45,4 +45,4 @@ local min = items[1].min
 for _, item in ipairs(items) do
     min = math.min(min, item.min)
 end
-print(min)
+print(min) -- 31161857

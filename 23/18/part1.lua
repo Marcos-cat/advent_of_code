@@ -74,4 +74,4 @@ for _, row in ipairs(grid) do
         if tile then area = area + 1 end
     end
 end
-print(area)
+print(area) -- 46359

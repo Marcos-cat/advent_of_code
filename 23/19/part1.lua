@@ -43,4 +43,4 @@ for ratings in file:gmatch '{([xmas=%d,]-)}' do
     end
     sum = sum + flow(part)
 end
-print(sum)
+print(sum) -- 342650

@@ -1,5 +1,4 @@
 local sum, cards = 0, {}
-
 for line in io.lines './input.txt' do
     local card, winstr, numstr = line:match '^%D+(%d+):(.+)|(.+)$'
     card = tonumber(card)
@@ -17,4 +16,4 @@ for line in io.lines './input.txt' do
         cards[i] = (cards[i] or 1) + cards[card]
     end
 end
-print(sum)
+print(sum) -- 6189740

@@ -35,4 +35,4 @@ for line in io.lines './input.txt' do
         table.insert(pattern, row)
     end
 end
-print(sum)
+print(sum) -- 35799

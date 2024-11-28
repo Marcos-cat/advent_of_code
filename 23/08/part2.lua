@@ -22,4 +22,4 @@ for _, node in ipairs(nodes) do
     until b == 0
     totalsteps = (steps * totalsteps) / gcd
 end
-print(totalsteps)
+print(totalsteps) -- 10921547990923

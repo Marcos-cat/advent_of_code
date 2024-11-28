@@ -7,4 +7,4 @@ for line in io.lines './input.txt' do
     sum = sum + colors.red * colors.green * colors.blue
     game = game + 1
 end
-print(sum)
+print(sum) -- 56580

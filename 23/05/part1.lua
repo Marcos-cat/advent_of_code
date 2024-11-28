@@ -31,4 +31,4 @@ local min = seeds[1]
 for _, seed in ipairs(seeds) do
     min = math.min(min, seed)
 end
-print(min)
+print(min) -- 57075758

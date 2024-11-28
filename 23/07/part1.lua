@@ -40,4 +40,4 @@ local winnings = 0
 for rank, hand in ipairs(hands) do
     winnings = winnings + rank * hand.bid
 end
-print(winnings)
+print(winnings) -- 250453939

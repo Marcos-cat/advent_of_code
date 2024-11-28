@@ -11,4 +11,4 @@ for line in io.lines './input.txt' do
         end
     end
 end
-print(sum)
+print(sum) -- 2005352194

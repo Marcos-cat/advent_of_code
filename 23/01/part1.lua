@@ -6,4 +6,4 @@ for line in io.lines './input.txt' do
     end
     sum = sum + first * 10 + last
 end
-print(sum)
+print(sum) -- 55208

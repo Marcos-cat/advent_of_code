@@ -23,4 +23,4 @@ for _, gear in ipairs(gears) do
     end
     if #touching == 2 then sum = sum + touching[1] * touching[2] end
 end
-print(sum)
+print(sum) -- 72246648

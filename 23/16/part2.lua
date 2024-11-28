@@ -86,4 +86,4 @@ for y = 1, height do
     max = math.max(max, shine { x = 0, y = y, dirx = 1, diry = 0 })
     max = math.max(max, shine { x = width + 1, y = y, dirx = -1, diry = 0 })
 end
-print(max)
+print(max) -- 8026

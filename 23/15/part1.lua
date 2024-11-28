@@ -6,4 +6,4 @@ for step in io.open('./input.txt'):read():gmatch '[^,]+' do
     end
     sum = sum + hash
 end
-print(sum)
+print(sum) -- 510013

@@ -31,4 +31,4 @@ for line in io.lines './input.txt' do
         if possible and i == #grouping then count = count + 1 end
     end
 end
-print(count)
+print(count) -- 6949

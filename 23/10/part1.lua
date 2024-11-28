@@ -21,4 +21,4 @@ repeat
         dirx, diry = diry, dirx
     end
 until posx == startx and posy == starty
-print(steps / 2)
+print(steps / 2) -- 6882

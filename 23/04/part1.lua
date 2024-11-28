@@ -13,4 +13,4 @@ for line in io.lines './input.txt' do
     end
     sum = sum + (score or 0)
 end
-print(sum)
+print(sum) -- 15205

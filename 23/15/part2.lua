@@ -30,4 +30,4 @@ for i, box in pairs(boxes) do
         focuspower = focuspower + (i + 1) * slot * focallen
     end
 end
-print(focuspower)
+print(focuspower) -- 268497

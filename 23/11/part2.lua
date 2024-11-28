@@ -19,4 +19,4 @@ for a = 1, #galaxies do
         end
     end
 end
-print(dist)
+print(dist) -- 634324905172

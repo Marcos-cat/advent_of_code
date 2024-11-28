@@ -13,4 +13,4 @@ while curr ~= 'ZZZ' do
     curr = nodes[curr][instrs:sub(i, i)]
     steps = steps + 1
 end
-print(steps)
+print(steps) -- 14429

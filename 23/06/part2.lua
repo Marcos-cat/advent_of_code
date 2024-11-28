@@ -9,6 +9,6 @@ for line in io.lines './input.txt' do
     else
         local disc = math.sqrt(time ^ 2 - 4 * num)
         local max, min = (time + disc) / 2, (time - disc) / 2
-        print(math.ceil(max) - 1 - math.floor(min))
+        print(math.ceil(max) - 1 - math.floor(min)) -- 23501589
     end
 end
