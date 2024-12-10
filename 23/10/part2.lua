@@ -1,4 +1,5 @@
-local grid, start = {}
+local grid = {}
+local start
 for line in io.lines './input.txt' do
     local row = {}
     table.insert(grid, row)
