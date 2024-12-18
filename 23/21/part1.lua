@@ -1,4 +1,4 @@
-local garden, start = {}
+local garden, start = {}, nil
 for line in io.lines './input.txt' do
     local row = {}
     table.insert(garden, row)
