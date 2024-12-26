@@ -1,4 +1,9 @@
-&fras"./input.txt"
-Part₁ ← ⧻⊚⊜(↥∩/↧∩∈◡¯⇡¯3≡/-◫2⊜⋕)≠@\n,⊸≠@ 
-Part₂ ← ⧻⊚⊜(/↥≡(↥∩/↧∩∈◡¯⇡¯3≡/-◫2)≡⍜↻↘₁⊙¤°⊏⊜⋕)≠@\n,⊸≠@ 
-⊃Part₂ Part₁
+Parse ← ⊜(□⊜⋕⊸≠@ )⊸≠@\n
+
+Safe ← =⌵⊃/+⧻±×∊⍜¯⇡3⊸⌵⧈-
+
+Part₁ ← ⧻⊚≡◇Safe
+Part₂ ← ⧻⊚≡◇(/↥≡Safe≡⍜↻↘₁⊙¤°⊏)
+
+:⊃Part₁ Part₂ Parse &fras"./input.txt"
+# 218 219
