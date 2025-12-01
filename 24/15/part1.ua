@@ -1,6 +1,6 @@
 # Experimental!
 Parse ← (
-  ⊓(⊜∘⊸≠@\n|≡⊟⊃(∈"^v"|∈"<^")▽⊸≠@\n)°$"_\n\n_"
+  ⊓(⊜∘⊸≠@\n|≡⊟⊃(∊"^v"|∊"<^")▽⊸≠@\n)°$"_\n\n_"
   :+×2=@#⟜(⍜⊡⋅∞⊢⊚=@@⤙=@O)
 )
 
@@ -15,4 +15,4 @@ GPS ← /+♭≡⍜⊢×₁₀₀⊚=1
 
 Show ← ⨬(@.|@O|@#|@@)⍜⊡⋅3⊢⊚⊸=∞
 
-GPS Move Parse &fras"./input.txt"
+GPS Move Parse &fras"./input.txt" # 1515788

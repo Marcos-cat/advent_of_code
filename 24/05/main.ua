@@ -1,10 +1,10 @@
-Parse ← :⊓(°⊚⋕⍚[°$"_|_"]|⍚⊜⋕⊸≠@,)∩(⊜□⊸≠@\n) °$"_\n\n_"
+Parse ← ⊓(⍚⊜⋕⊸≠@,|⋕⍚°/$"_|_")∩(⊜□⊸≠@\n) °˜$"_\n\n_"
 
-Sort   ← ⊏⤚(⍏/+⬚0⊡⊞⊟.)
+Sort   ← ⊏⤚(⍏/+˜∊˙⊞⊟)
 Middle ← ⊏⌊÷₂⊸⧻
 
-Part₁ ← /+▽≡◇⊃(≍⟜Sort|Middle)⊙¤
-Part₂ ← /+▽≡◇(⊃(¬≍|Middle)⤚Sort)⊙¤
+Part₁ ← /+▽≡⌟◇⊃(≍⟜Sort|Middle)
+Part₂ ← /+▽≡⌟◇(⊃(¬≍|Middle)⤚Sort)
 
-:⊃Part₁ Part₂ Parse &fras"./input.txt"
+⊃Part₁ Part₂ Parse &fras "input.txt"
 # 4905 6204

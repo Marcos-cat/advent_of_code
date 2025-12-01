@@ -1,9 +1,9 @@
 Parse ← ⊜(□⊜⋕⊸≠@ )⊸≠@\n
 
-Safe ← =⌵⊃/+⧻±×∊⍜¯⇡3⊸⌵⧈-
+Safe ← =⊃⧻(⌵/+)±×⊸(≤3⌵)⧈-
 
 Part₁ ← ⧻⊚≡◇Safe
-Part₂ ← ⧻⊚≡◇(/↥≡Safe≡⍜↻↘₁⊙¤°⊏)
+Part₂ ← ⧻⊚≡◇(/↥≡⌟(Safe⍜↻↘₁)°⊏)
 
-:⊃Part₁ Part₂ Parse &fras"./input.txt"
-# 218 219
+[⊃Part₁ Part₂] Parse &fras "input.txt"
+# 218 290

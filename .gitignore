@@ -1,5 +1,5 @@
 target/
 uiua-modules/
-part*a.*
+*a.*
 input.txt
 sample*.txt
