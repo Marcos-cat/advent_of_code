@@ -42,7 +42,7 @@ Parse ← ⊃(▽⊸(/↥⍉)=@^|=@S⊢)⊜∘⊸≠@\n
 # This slightly optimized Parse just does a single equality check, UnBackJoins
 # to separate the tachyon from the splitters, and then removes empty rows.
 # Splitters StartTachyon ? Input
-Parse ← ▽⊸(/↥⍉)°˜⊂≠@.⊜∘⊸≠@\n
+Parse ← ▽◿₂°⊏°˜⊂≠@.⊜∘⊸≠@\n
 
 # Split is the sum of two fork tines, the tachyons that pass through, and the
 # ones that split. To pass through, the must be no splitters, so I mask by
@@ -50,7 +50,10 @@ Parse ← ▽⊸(/↥⍉)°˜⊂≠@.⊜∘⊸≠@\n
 # splitters and then shift the tachyons right and left, adding the two 
 # together.
 # Tachyons ? Splitters Tachyons
-Split ← +⊃(×¬|+⊃↻₁°↻₁×)
+Split ← (
+  A′ ← ⍉¤A₁
+  +⊃(×¬|/+↻A′×)
+)
 
 # Once again Part1 iterates through and splits for each row, but now using Sign
 # to deduplicate the tachyons, and Multiply to find where tachyons are getting
