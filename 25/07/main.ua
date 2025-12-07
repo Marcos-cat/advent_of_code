@@ -38,7 +38,11 @@ Part₂ ← /+◌∧◇(⊃◴(⊕/+⊛)⊃(/◇⊂|▽≡◇⧻) ⍚⌞Split) �
 # through.
 # Splitters StartTachyon ? Input
 Parse ← ⊃(▽⊸(/↥⍉)=@^|=@S⊢)⊜∘⊸≠@\n
-Parse ← °˜⊂▽⊸(/↥⍉)≠@.⊜∘⊸≠@\n
+
+# This slightly optimized Parse just does a single equality check, UnBackJoins
+# to separate the tachyon from the splitters, and then removes empty rows.
+# Splitters StartTachyon ? Input
+Parse ← ▽⊸(/↥⍉)°˜⊂≠@.⊜∘⊸≠@\n
 
 # Split is the sum of two fork tines, the tachyons that pass through, and the
 # ones that split. To pass through, the must be no splitters, so I mask by
