@@ -38,6 +38,7 @@ Part₂ ← /+◌∧◇(⊃◴(⊕/+⊛)⊃(/◇⊂|▽≡◇⧻) ⍚⌞Split) �
 # through.
 # Splitters StartTachyon ? Input
 Parse ← ⊃(▽⊸(/↥⍉)=@^|=@S⊢)⊜∘⊸≠@\n
+Parse ← °˜⊂▽⊸(/↥⍉)≠@.⊜∘⊸≠@\n
 
 # Split is the sum of two fork tines, the tachyons that pass through, and the
 # ones that split. To pass through, the must be no splitters, so I mask by
@@ -58,4 +59,9 @@ Part₁ ← ◌∧⊃(±Split|+/+×)⊙⊙0
 # TotalTachyons ? Splitters StartTachyon
 Part₂ ← /+∧Split
 
-⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
+# This combines both the above solutions into one, so that I only have to 
+# iterate a single time.
+# SplitCount TotalTachyons ? Splitters StartTachyon
+BothParts ← ˜⊙∘/+∧⊃(Split|+/+±×)⊙⊙0
+
+⁅₅⍜now(BothParts Parse) Input
