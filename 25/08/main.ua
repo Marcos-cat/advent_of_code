@@ -40,9 +40,9 @@ Part₂ ← (
 
 Graph ← ⇡Size
 
-Link  ← ⍜▽\↧⊸∊ ⊸⊏
+Link ← ⨬◌(⍜▽\↧⊸∊)⊸/≠ ⊸⊏
 
-Part₁ ← /× ↙₃⇌⍆ °⊚⊛ ∧Link⊙Graph ↙Size
+Part₁ ← /× ↙₃⇌⍆ °⊚ ∧Link⊙Graph ↙Size
 
 Part₂ ← /×⊏⊏-₁⊙⊙◌⍢(⊃(+₁⊙∘|Link⊏)|¬/×⧈≍ ⋅⋅∘)0⊙Graph
 
