@@ -40,7 +40,9 @@ Part₂ ← (
 
 Graph ← ⇡Size
 
+# Better link functions thanks to @sky.frog
 Link ← ⨬◌(⍜▽\↧⊸∊)⊸/≠ ⊸⊏
+Link ← ⨬◌(+×⊃⊢(⊃¬×⊸≠⊣))⊸/≠ ⊸⊏
 
 Part₁ ← /× ↙₃⇌⍆ °⊚ ∧Link⊙Graph ↙Size
 
