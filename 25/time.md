@@ -1,3 +1,5 @@
+# Uiua Times AoC 2025
+
 | Day | Time (ms) |
 | --- | --------- |
 | 1   | 4.09      |
