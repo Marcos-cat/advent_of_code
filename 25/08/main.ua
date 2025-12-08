@@ -1,14 +1,14 @@
 Input ← &fras "input.txt"
 
-# Order Connections Positions ? Input
-Parse ← ⊸(⍏/+°√/-⍉ ∩⧅₂< °˜⊏) ↯∞_3⊜⋕¬⊸∊"\n,"
+# Connections Positions ? Input
+Parse ← ⊃(⊏⍏/+°√/-⍉ ∩⧅₂< °˜⊏)≡⊢ ↯∞_3⊜⋕¬⊸∊"\n,"
 
 Size ← 1000
 
 # Solution 1
 
 Part₁ ← (
-  ⊏↙Size
+  ↙Size
   ◌⍢(
     ⍥(⊂⟜(∩⌟▽⟜¬/+⍉⊸∊♭))∞ ⊃↙↘1
     ⊃⋅∘(˜⊂⧻◴♭⊙⋅∘)
@@ -17,23 +17,33 @@ Part₁ ← (
   /×⊏↙3⊸⍖
 )
 
-Mask    ← ⬚0↙Size°⊚
-Connect ← ⨬(⋅⊂|⊂⊙(↥/↥)∩⌟▽⊸¬) ⤚⊸(⊸⬚0/↥≡/↥×¤)
+Mask ← ⬚0↙Size°⊚
+Link ← ⨬(⋅⊂|⊂⊙(↥/↥)∩⌟▽⊸¬) ⤚⊸(⊸⬚0/↥≡/↥×¤)
 
 Part₂ ← (
-  ⊓(⊏|≡⊢)
+  ⊙≡⊢
   ⊙(°△0_Size)
-  ⍢(⊃(⊓+₁∘|Connect Mask⊏)|¬/×⬚0⊢ ◌◌) 0
+  ⍢(⊃(⊓+₁∘|Link Mask⊏)|¬/×⬚0⊢ ◌◌) 0
   /×⊏⊙◌⊏-₁
 )
 
 # Solution 1.5
 
-Connect ← ˜⊂□◴⍆⊂⟜(/◇⊂∩⌟▽⟜¬⊸≡⌞◇(/↥∊))
+Link ← ˜⊂□◴⍆⊂⟜(/◇⊂∩⌟▽⟜¬⊸≡⌞◇(/↥∊))
 
 Part₂ ← (
-  ⊓(⊏⇌|≡⊢)
-  /×⊏⊓⊣⋅∘⍢(⟜(Connect⊣)↘₋₁|≠Size◇⧻⬚[]⊢◌)˜⊂0 ⊙{}
+  ⊓(⇌|≡⊢)
+  /×⊏⊓⊣⋅∘⍢(⟜(Link⊣)↘₋₁|≠Size◇⧻⬚[]⊢◌)˜⊂0 ⊙{}
 )
 
-⍜now(⊃Part₁ Part₂ Parse) Input
+# Solution 2
+
+Graph ← ⇡Size
+
+Link  ← ⍜▽\↧⊸∊ ⊸⊏
+
+Part₁ ← /× ↙₃⇌⍆ °⊚⊛ ∧Link⊙Graph ↙Size
+
+Part₂ ← /×⊏⊏-₁⊙⊙◌⍢(⊃(+₁⊙∘|Link⊏)|¬/×⧈≍ ⋅⋅∘)0⊙Graph
+
+⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
