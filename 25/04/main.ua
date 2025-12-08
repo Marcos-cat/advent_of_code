@@ -8,6 +8,6 @@ Removeable ← (
 )
 
 Part₁ ← ⧻⊚Removeable
-Part₂ ← -∩(⧻⊚)⊸(⍥(-⊸Removeable)70)
+Part₂ ← -∩(⧻⊚)⊸⍥(-⊸Removeable)∞
 
-⁅₅⍜now(⊃(&p+1⍜nowPart₁|&p⍜nowPart₂) &p⍜nowParse) Input
+⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
