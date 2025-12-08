@@ -2,9 +2,12 @@ Input ← &fras "input.txt"
 
 Parse ← =@@⊜∘⊸≠@\n
 
-Removeable ← ×⊸(<4/+⬚0↻⊂C₂A₂)
+Removeable ← (
+  M₂ ← ⊂C₂A₂
+  ×⊸(<4/+⬚0↻M₂)
+)
 
 Part₁ ← ⧻⊚Removeable
-Part₂ ← -∩(⧻⊚)⊸⍥(-⊸Removeable)∞
+Part₂ ← -∩(⧻⊚)⊸(⍥(-⊸Removeable)70)
 
-⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
+⁅₅⍜now(⊃(&p+1⍜nowPart₁|&p⍜nowPart₂) &p⍜nowParse) Input
