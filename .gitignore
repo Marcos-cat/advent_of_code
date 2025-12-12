@@ -1,6 +1,7 @@
 target/
 uiua-modules/
 *a.*
-input.txt
+input*.txt
 sample*.txt
+test*
 Cargo.*
