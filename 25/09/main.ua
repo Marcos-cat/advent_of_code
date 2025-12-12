@@ -11,8 +11,12 @@ Part₂ ← (
     ⊃(⍜≡°⊟⊃↧(+₁↥) ⧅₂<          # All compressed rects
     | /◇⊂⍚(+¤⟜(⊞×⇡/+°˜×-)) ⊸↻₁ # Make the border by interpolating
 
-      /×[˙⍜⊓(⍉|⇌⍉|⇌|∘)∩₄\↥] °⊚  # Make the grid
-      ⊸(⊟⤚(⊚¬≡⊏)⊸(⊢⍖⧈↧⌵⬚0⧈-/+)) # Find outliers
+      /×[˙⍜⊓(⍉|⇌⍉|⇌|∘)∩₄\↥] °⊚ # Make the grid
+      ⊸(⊟⤚(
+          ⊚¬≡⊏
+          ↙⊙↘⊸(∩⌟(⌊×)⊙⊙⧻)⟜(÷₂¬) 0.4 # Keep only the middle few to speed up comparisons
+        )⊸(⊢⍖⧈↧⌵⬚0⧈-/+)
+      ) # Find outliers
     )
   )
 
