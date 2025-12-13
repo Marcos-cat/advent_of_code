@@ -1,8 +1,8 @@
-Input ← &fras"input.txt"
+Input ← &fras "input.txt"
 
-Parse ← \+-⊸¬=@(↘₋₁
+Parse ← \+ -⊸¬=@( ↘₋₁
 
 Part₁ ← ⊣
 Part₂ ← +₁˜⨂¯1
 
-⊃Part₁ Part₂ Parse Input
+⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
