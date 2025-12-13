@@ -1,11 +1,8 @@
-File ← ▽⊸≠@\n&fras"./input.txt"
+Input ← &fras"input.txt"
 
----Solution₁
-  F ← /+-⟜¬=@)
-  &p F File
----
+Parse ← \+-⊸¬=@(↘₋₁
 
----Solution₂
-  F ← +1⊗¯1\+-⟜¬=@)
-  &p F File
----
+Part₁ ← ⊣
+Part₂ ← +₁˜⨂¯1
+
+⊃Part₁ Part₂ Parse Input
