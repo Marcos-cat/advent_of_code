@@ -1,15 +1,9 @@
-File ← ▽⊸≠@\n&fras"./input.txt"
+Input ← &fras "input.txt"
 
----Solution₁
-  F ← ⧻◴\+⊂0_0⊏:⊂⊸¯⊟⊸⇌⋯2⊗⊙"^<v>"
-  F ← ⧻◴\+⊂0_0⊏:⊂⊸¯⋯1_2⊗⊙"^<v>"
-  F ← ⧻◴\+⊂0⊏:⊂⊸¯i_1⊗⊙"^<v>"
-  F ← ⧻◴\+⊂0⊏:⊂⊸¯i_1⊗⊙"^<v"
-  
-  &p F File
----
+Parse ← ˜⊏A₂⨂"<^>v"↘₋₁
 
----Solution₂
-  F ← ⧻◴⊂∩(\+⊂0⊏:⊂⊸¯i_1⊗⊙"^<v"▽)¬,,⋯2
-  &p F File
----
+Part₁ ← ⧻◴\+⊂0
+
+Part₂ ← ⧻◴♭⊕(\+⊂0)◿₂°⊏
+
+⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
