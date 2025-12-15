@@ -33,13 +33,15 @@ Part₂ ← (
 
 Part₂ ← (
   ⊙(
-    ⍜⍉≡⍜◴⍥₂⍏
-    ⊃(⍜(°⊟⍉|⊃↧(+₁↥))⧅₂<
-    | °⊚ /◇⊂⍚(+¤⟜(⊞×⇡/+°˜×-)) ⊸↻₁
-      ⍉⊚ ×⊃(¬|/↥⬚0↻A₂) /×[˙⍜⊓(⍉|⇌⍉|⇌|∘)∩₄\↥])
+    ⍜⍉≡⍜◴⍥₂⍏                                # Compress coordinates
+    ⊃(⍜(°⊟⍉|⊃↧(+₁↥))⧅₂<                     # Get all rectangles, NW and SE corners
+    | °⊚ /◇⊂⍚(+¤⟜(⊞×⇡/+°˜×-)) ⊸↻₁           # Turn vertices into perimeter
+      ⊚ ×⊃(¬|/↥⬚0↻A₂) /×[˙⍜⊓(⍉|⇌⍉|⇌|∘)∩₄\↥] # Turn perimeter into exterior
+      ⍉ ⊂⊸⊏⊢⍏⊸(/+°√- ⊃(÷⊃⧻/+)⍉)             # Get "most central" point and put it at the front
+    )
   )
   ∩⌞⊏⊸⍖
-  ˜⊏⊙(⊙⋅◌⍢+₁(/↥/×≠∩⌟< °⊟⊏) 0)
+  ˜⊏⊙(⊙⋅◌⍢+₁(⨬(/↥/×≠∩⌟<|1) ◡(/×≠∩⌟< ⊙⊙≡⊢) °⊟⊏) 0)
 )
 
 ⁅₅⍜now(⊃Part₁ Part₂ Parse) Input
